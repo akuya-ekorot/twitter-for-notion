@@ -13,7 +13,9 @@ datasource db {
 
 model User {
   id            String    @id @default(cuid())
+  twitterId     String
   name          String?
+  username      String?
   email         String?   @unique
   emailVerified DateTime?
   image         String?
