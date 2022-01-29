@@ -11,4 +11,6 @@ export default function handler(req, res) {
     process.env.CALLBACK_URL,
     { scope: "tweet.read tweet.write users.read offline.access" }
   );
+
+  res.redirect(url);
 }
